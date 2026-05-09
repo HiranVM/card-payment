@@ -67,13 +67,11 @@ export default function Home() {
 
           {/* Right Column: Card Preview & History */}
           <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-24">
-            <div className="hidden sm:block">
-              <CardPreview 
-                cardNumber={previewData.cardNumber}
-                cardholderName={previewData.cardholderName}
-                expiryDate={previewData.expiryDate}
-              />
-            </div>
+            <CardPreview 
+              cardNumber={previewData.cardNumber}
+              cardholderName={previewData.cardholderName}
+              expiryDate={previewData.expiryDate}
+            />
             
             <TransactionHistory />
           </div>
